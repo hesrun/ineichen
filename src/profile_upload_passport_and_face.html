@@ -1,0 +1,51 @@
+@@include('parts/header.html')
+<div class="info-profile-modal-page">
+  <div class="back-to-ineichen">
+    <button class="back-to-ineichen__button">
+      <svg class="feather icon-item">
+        <use xlink:href="assets/icons/feather-sprite.svg#arrow-left" />
+      </svg>
+      <span class="back-to-ineichen__button-text">Back to Ineichen</span>
+    </button>
+  </div>
+  <div class="info-profile-modal-page__content">
+    <!--  -->
+    <div class="info-profile-modal-page__content-title">
+      Upload your face with ID/passport
+    </div>
+    <div class="drop-zone">
+      <div class="drop-zone__inner-part">
+        <img src="./assets/icons/upoad_input-logo.svg" alt="" />
+        <span class="drop-zone__inner-part-text"
+          >Drop your documents here, or <button class="click_to_browse">click to browse</button></span
+        >
+        <input type="file" hidden>
+        <span class="drop-zone__inner-part-subtext"
+          >up to 10MB each.</span
+        >
+      </div>
+    </div>
+    
+    <button class="main-btn bid-btn profile-information-continue-button upload-disabled">
+      Upload to continue
+    </button>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-enabled">
+      Continue 👉
+    </button>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-process">
+      <span><img src="./assets/icons/Ellipse 184.svg" alt=""><span class="verify_your_identity">Verify your Identity...</span></span>
+    </button>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-complete">
+      <svg class="feather icon-item">
+        <use xlink:href="assets/icons/feather-sprite.svg#check" />
+      </svg>
+    </button>
+    
+    <button class="main-btn bid-btn profile-information-back-button">Back</button>
+    <!--  -->
+  </div>
+</div>
+@@include('parts/footer.html')

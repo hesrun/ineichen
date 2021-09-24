@@ -1,0 +1,46 @@
+.profile-info-grid {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.double-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 18px;
+}
+
+.triple-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 18px;
+}
+
+.profile-info-grid h2 {
+    margin-bottom: 40px;
+}
+
+.phone-container {
+    display: flex;
+}
+
+.phone-input {
+    width: 30%;
+    padding-right: 18px;
+}
+
+.phone-input2 {
+    width: 70%;
+}
+
+.profile-info-desc-desc {
+    width: 80%;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+
+.profile-info-desc-desc2 {
+    width: 80%;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 30px;
+}

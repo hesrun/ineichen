@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@font-face {
+	font-family: 'GT'; 
+    font-weight: 700;
+	src: url(/assets/fonts/GT-America-Extended-Black.otf); 
+}
+
+@font-face {
+	font-family: 'GT'; 
+    font-weight: 600;
+	src: url(/assets/fonts/GT-America-Extended-Bold.otf); 
+}
+
+@font-face {
+	font-family: 'GT'; 
+    font-weight: 500;
+	src: url(/assets/fonts/GT-America-Extended-Medium.otf); 
+}
+
+@font-face {
+	font-family: 'GT'; 
+    font-weight: 400;
+	src: url(/assets/fonts/GT-America-Extended-Regular.otf); 
+}
+
+h1,h2,h3,h4,h5,h6 { margin: 0; font-weight: 400; font-family: 'GT', sans-serif;}
+button {
+    font-family: "GT", sans-serif;
+}
+
+h1 { font-size: 48px; line-height: 120%; letter-spacing: -0.0em;}
+h2 { font-size: 34px; }
+h3 { font-size: 28px; }
+h4 { font-size: 20px; font-family: 'GT', sans-serif;}
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+
+.little-grey-text {
+	font-family: 'Inter';
+	font-size: 14px;
+	font-weight: 500;
+	color: #717171;
+}
+
+body {
+	color: #000 !important; 
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+	// background-color: #F7FAF2;
+}
+
+.total-bids-right {
+	font-size: 13px;
+	font-family: 'Inter', sans-serif;
+}

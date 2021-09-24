@@ -1,0 +1,27 @@
+@@include('parts/header.html')
+
+<div class="back-to-ineichen">
+  <a class="back-to-ineichen__button" href="index.html">
+    <svg class="feather icon-item">
+      <use xlink:href="assets/icons/feather-sprite.svg#arrow-left" />
+    </svg>
+    <span class="back-to-ineichen__button-text">Back to Ineichen</span>
+  </a>
+  </div>
+
+<div class="login-grid">
+    <h1 class="login-heading">Sign in
+    </h1>
+    <div class="form">
+        <input class="login-input" type="email" placeholder="Enter your email" autofocus>
+        <!-- <input type="password" placeholder="Password"> -->
+    </div>
+    <div class="login-footer">
+        <a href="signin_password.html" class="main-btn">Continue</a>
+        <a href="index.html" class="secondary-btn">
+            Continue with Google
+          </a>
+    </div>
+    <span class="new-user">New user?<a href="/signup.html" class="new-user-link">Create an account</a></span>
+
+@@include('parts/footer.html')

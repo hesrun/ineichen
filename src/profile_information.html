@@ -1,0 +1,83 @@
+@@include('parts/header.html')
+<div class="info-profile-modal-page">
+  <div class="back-to-ineichen">
+    <a class="back-to-ineichen__button" href="profile.html">
+      <svg class="feather icon-item">
+        <use xlink:href="assets/icons/feather-sprite.svg#arrow-left" />
+      </svg>
+      <span class="back-to-ineichen__button-text">Back to Ineichen</span>
+    </a>
+  </div>
+ 
+
+  <div class="login-grid">
+    <div class="profile-info-grid">
+    <h2>Profile information</h2>
+    <div class="input-field">
+      <select>
+        <option value="" disabled selected>Title</option>
+        <option value="1">Mr</option>
+        <option value="2">Ms</option>
+      </select>
+    </div>
+    <div class="double-grid">
+      <div class="input-field">
+        <input id="first_name" type="text">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field">
+        <input id="last_name" type="text">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="triple-grid">
+    <div class="input-field">
+      <select>
+        <option value="" disabled selected>Month</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+      <label>Date of birth</label>
+    </div>
+    <div class="input-field">
+      <select>
+        <option value="" disabled selected>Day</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="input-field">
+      <select>
+        <option value="" disabled selected>Year</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+  <div class="phone-container">
+    <div class="input-field phone-input">
+      <select>
+        <option value="" disabled selected>+7</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+      <label>Phone number</label>
+    </div>
+    <div class="input-field phone-input2">
+      <input id="tel" type="text">
+      <label for="tel">Entry phone number</label>
+    </div>
+  </div>
+  <span class="profile-info-desc-desc">
+    Ineichen asks for your date of birth for <br>identify verification to keep your account secure.
+  </span>
+  </div>
+  <a href="profile_information2.html" class="main-btn">Continue</a>
+  </div>
+
+
+@@include('parts/footer.html')

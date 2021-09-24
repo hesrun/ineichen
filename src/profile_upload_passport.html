@@ -1,0 +1,82 @@
+@@include('parts/header.html')
+<div class="info-profile-modal-page">
+  <div class="back-to-ineichen">
+    <button class="back-to-ineichen__button">
+      <svg class="feather icon-item">
+        <use xlink:href="assets/icons/feather-sprite.svg#arrow-left" />
+      </svg>
+      <span class="back-to-ineichen__button-text">Back to Ineichen</span>
+    </button>
+  </div>
+  <div class="info-profile-modal-page__content">
+    <!--  -->
+    <div class="info-profile-modal-page__content-title">
+      Upload scan of your ID/passport
+    </div>
+    <div class="drop-zone">
+      <div class="drop-zone__inner-part">
+        <img src="./assets/icons/upoad_input-logo.svg" alt="" />
+        <span class="drop-zone__inner-part-text"
+          >Drop your documents here, or <button class="click_to_browse">click to browse</button></span
+        >
+        <input type="file" hidden>
+        <span class="drop-zone__inner-part-subtext"
+          >up to 10MB each.</span
+        >
+      </div>
+    </div>
+
+    <div class="uploads-zone">
+      <div class="uploads-zone_title">Uploads:</div>
+      <!--  -->
+      <div class="uploads-zone__upload">
+        <img class="uploads-zone__upload-img" src="./assets/icons/upload-file.svg">
+        <div class="uploads-zone__upload-progress-and-file">
+          <div class="uploads-zone__upload-filename">passport.png</div>
+          <div class="uploads-zone__upload-progress">41%</div>
+          <progress max="100" value="41"></progress>
+        </div>
+        <button class="uploads-zone__upload-exit">
+          <svg class="feather icon-item">
+            <use xlink:href="assets/icons/feather-sprite.svg#x" />
+          </svg>
+        </button>
+      </div>
+      <!--  -->
+      <div class="uploads-zone__upload">
+        <img class="uploads-zone__upload-img" src="./assets/icons/upload-file.svg">
+        <div class="uploads-zone__upload-progress-and-file">
+          <div class="uploads-zone__upload-filename">passport.png</div>
+          <div class="uploads-zone__upload-progress">41%</div>
+          <progress max="100" value="41"></progress>
+        </div>
+        <button class="uploads-zone__upload-exit">
+          <svg class="feather icon-item">
+            <use xlink:href="assets/icons/feather-sprite.svg#x" />
+          </svg>
+        </button>
+      </div>
+      <!--  -->
+    </div>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-disabled">
+      Upload to continue
+    </button>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-enabled">
+      Continue 👉
+    </button>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-process">
+      <span><img src="./assets/icons/Ellipse 184.svg" alt=""><span class="verify_your_identity">Verify your Identity...</span></span>
+    </button>
+
+    <button class="main-btn bid-btn profile-information-continue-button upload-complete">
+      <svg class="feather icon-item">
+        <use xlink:href="assets/icons/feather-sprite.svg#check" />
+      </svg>
+    </button>
+    <!--  -->
+  </div>
+</div>
+@@include('parts/footer.html')

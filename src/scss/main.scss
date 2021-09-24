@@ -1,0 +1,50 @@
+// @import "./components/forms/input-fields";
+// @import "./components/forms/select";
+// @import "./components/forms/color-classes";
+// @import "./components/forms/table_of_contents";
+// @import "./components/forms/variables";
+
+// General
+@import "./general/app";
+@import "./general/fonts";
+@import "./general/colors";
+@import "./general/header";
+@import "./general/footer";
+@import "./general/materializekill";
+
+// Grids
+@import "./grids/lots";
+@import "./grids/main";
+
+// Cards
+@import "./components/cards/lot";
+
+// Buttons
+@import "./components/buttons/mainbtn";
+
+// Pages
+@import "./pages/home";
+@import "./pages/auction";
+@import "./pages/live-auction";
+@import "./pages/login";
+@import "./pages/profile";
+
+// Effects
+@import "./components/effects/effects";
+
+//
+@import "./components/buttons/dropdown";
+
+// modal-page
+@import "./components/modal-page/desktop-modal-page";
+@import "./components/modal-page/mobile-modal-page";
+@import "./components/modal/modal";
+
+// profile
+@import "./components/profile/profile";
+@import "./components/profile/profile_popups";
+@import "./components/profile/inputs_from_materialise";
+@import "./components/info-profile/info-profile";
+
+//textfields
+// @import "./components/textfields/inputs";

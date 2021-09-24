@@ -1,0 +1,61 @@
+@@include('parts/header.html')
+<div class="info-profile-modal-page">
+  <div class="back-to-ineichen">
+    <a class="back-to-ineichen__button" href="profile.html">
+      <svg class="feather icon-item">
+        <use xlink:href="assets/icons/feather-sprite.svg#arrow-left" />
+      </svg>
+      <span class="back-to-ineichen__button-text">Back to Ineichen</span>
+    </a>
+  </div>
+ 
+
+  <div class="login-grid">
+    <div class="profile-info-grid">
+    <h2>Credit card 
+        details</h2>
+  <span class="profile-info-desc-desc2">
+    Please provide a credit card that is billed to your home address.
+  </span>
+  <div class="input-field col">
+    <input id="credit-card" type="tel">
+    <label for="name of card">Full name of card</label>
+  </div>
+  <div class="input-field col">
+    <input id="credit-card" type="tel">
+    <label for="Card number">Card number</label>
+  </div>
+  <div class="triple-grid">
+    <div class="input-field">
+      <select>
+        <option value="" disabled selected>MM</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="input-field">
+      <select>
+        <option value="" disabled selected>YY</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="input-field col">
+        <input id="credit-card" type="tel">
+        <label for="cvc">CVC</label>
+      </div>
+  </div>
+  <span class="profile-info-desc-desc">
+    Ineichen asks for your credit card and billing details for identify verification. A temporary charge will be issued to your card which will be refunded. Your credit card will not be stored.
+  </span>
+  </div>
+  <div class="buttons-footer">
+  <a href="profile_information3.html" class="main-btn">Continue</a>
+  <a href="profile_information.html" class="secondary-btn btn-margin-top"><span class="middle-text-btn">Back</span></a>
+</div>  
+</div>
+
+
+@@include('parts/footer.html')

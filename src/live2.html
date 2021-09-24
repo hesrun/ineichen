@@ -1,0 +1,163 @@
+@@include('parts/header.html')
+
+<body onload="startTime()">
+
+    <div class="auction-main">
+        <div class="auction-wrapper">
+            <div class="stream-container">
+
+
+
+                <video class="video-live" autoplay muted loop controls preload="auto">
+                    <source src="/assets/media/video.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video>
+
+                <!-- <div class="stream-controls">
+                <a href="/auction2.html" class="live-icon-x-a"><div class="live-icon-x">
+                <svg class="feather live-icon-item">
+                    <use xlink:href="assets/icons/feather-sprite.svg#chevron-left" />
+                </svg>
+               
+            </div>
+        </a>
+            <h3 class="stream-heading">Timepieces Auction No. 174</h>
+            </div> -->
+
+                <div class="stream-footer">
+                    <div class="stream-footer-left">
+                        <h3 class="stream-heading">Timepieces Auction No. 174</h>
+                            <div class="holder-container">
+                                <div class="holder-avatar"></div>
+                                <span class="holder-name"><span class="holder-by">by</span>Ineichen Zurich</span>
+                            </div>
+                    </div>
+                    <div class="stream-footer-right">
+                        <div class="stream-footer-buttons">
+                            <button class="value value2">Live support</button>
+                        <button class="value">CHF
+                            <svg class="feather valueicon">
+                                <use xlink:href="assets/icons/feather-sprite.svg#chevron-down" />
+                            </svg>
+                        </button>
+                    </div>
+                        <div class="live-counter">
+                        <div class="livers">
+                        <svg class="feather live-icon">
+                            <use xlink:href="assets/icons/feather-sprite.svg#user" />
+                        </svg>
+                        <div id="out" class="out-num">2450</div>
+                    </div>
+                    <div id="out2" class="out-num2">0:23:22</div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="current-lot-container">
+
+                <div class="live-lot-section">
+                    <div class="live-lot-container">
+                        <div id="live-lot-image"><img src="./assets/media/demo/7.jpeg" alt=""></div>
+                    </div>
+                </div>
+                <div class="lot-content-stream">
+                    <div class="stream-lot-sub">
+                        <span class="stream-lot-price">Jaeger-LeCoultre Atmos Atlantis
+                        </span>
+                        <span class="stream-lot-subheading">12 of 78</span>
+                    </div>
+
+                    <!-- <h3 class="stream-lot-heading">Jaeger-LeCoultre Atmos Atlantis</h3>
+                <span class="stream-lot-price">$10,000</span> -->
+                </div>
+                <div class="bid-stat">
+                    <div class="total-bids">
+                        <div class="total-bids-left">
+                            <!-- <svg class="feather little-icon">
+                            <use xlink:href="assets/icons/feather-sprite.svg#smile" />
+                        </svg> -->
+                            <span class="little-grey-text">Estimate price</span>
+                        </div>
+                        <div class="total-bids-right">$7,000 - $9,000</div>
+                    </div>
+                    <div class="total-bids">
+                        <div class="total-bids-left">
+                            <!-- <svg class="feather little-icon">
+                            <use xlink:href="assets/icons/feather-sprite.svg#smile" />
+                        </svg> -->
+                            <span class="little-grey-text">Bids</span>
+                        </div>
+                        <div class="total-bids-right">14</div>
+                    </div>
+                    <div class="latest-bid">
+                        <div class="total-bids-left">
+                            <!-- <svg class="feather little-icon">
+                            <use xlink:href="assets/icons/feather-sprite.svg#message-circle" />
+                        </svg> -->
+                            <span class="little-grey-text">Latest bid</span>
+                        </div>
+                        <div class="total-bids-right">9,500 CHF (CHINA)</div>
+                    </div>
+                </div>
+
+                <button class="main-btn bid-btn">Bid 10,000 CHF</button>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- 
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => { 
+  // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+  const player = new Plyr('#player');
+  
+  // Expose
+  window.player = player;
+
+  // Bind event listener
+  function on(selector, type, callback) {
+    document.querySelector(selector).addEventListener(type, callback, false);
+  }
+
+  // Play
+  on('.js-play', 'click', () => { 
+    player.play();
+  });
+
+  // Pause
+  on('.js-pause', 'click', () => { 
+    player.pause();
+  });
+
+  // Stop
+  on('.js-stop', 'click', () => { 
+    player.stop();
+  });
+
+  // Rewind
+  on('.js-rewind', 'click', () => { 
+    player.rewind();
+  });
+
+  // Forward
+  on('.js-forward', 'click', () => { 
+    player.forward();
+  });
+});
+
+    </script> -->
+
+    @@include('parts/footer.html')
+
+</html>
