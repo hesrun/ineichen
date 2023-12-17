@@ -316,16 +316,17 @@
                             <strong>27,081</strong> Active bidders
                         </div>
                     </div>
-                    <div class="ineichen-anniversary__icon">
-                        <img src="img/main/auctions/anniversary.svg" alt="">
-                    </div>
+                    <picture class="ineichen-anniversary__icon">
+                        <source srcset="img/main/auctions/anniversary-sm.svg" media="(max-width: 520px)" />
+                        <img src="img/main/auctions/anniversary.svg" alt="Baby Sleeping" />
+                    </picture>
                 </div>
             </div>
         </section>
         <section class="land-section land-section_half land-section_clear">
             <div class="container">
                 <div class="main-carusel-grid">
-                    <div class="main-carusel-item swiper">
+                    <div id="caruselProducts" class="main-carusel-item swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide main-carusel-item__slide">
                                 <div class="main-carusel-product">
@@ -452,7 +453,7 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div class="main-carusel-item swiper">
+                    <div id="caruselReviews" class="main-carusel-item swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide main-carusel-item__slide">
                                 <div class="main-carusel-review">
@@ -593,7 +594,8 @@
     <script>
         $(document).ready(function () {
 
-            var swiper = new Swiper(".main-carusel-item", {
+            var mySwiper;
+            let swiperOptionsDesk = {
                 effect: 'fade',
                 pagination: {
                     el: ".swiper-pagination",
@@ -603,7 +605,17 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
-            });
+            }
+
+            const checkSize = () => {
+                if ($('body').width() >= 820) {
+                    mySwiper = new Swiper('.main-carusel-item', swiperOptionsDesk);
+                }
+            }
+
+            checkSize();
+
+
 
             $('.our-team__video').click(function () {
                 linkVideo = $(this).attr('href');

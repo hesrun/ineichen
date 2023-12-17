@@ -115,7 +115,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    @include scrollbars(4px, $blue-bg, white);
+    @include scrollbars(0px, white, white);
 }
 .serivices-list-item {
     border-radius: 15px;
@@ -152,7 +152,6 @@
         }
     }
 }
-
 .main-carusel-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -166,9 +165,8 @@
     border-radius: 15px;
     box-shadow: 0 4px 15px 0 rgba(black, 0.15);
     &__slide {
-        min-height: 280px;
-        display: flex;
-        align-items: center;
+        background: #fff;
+        border-radius: 15px;
     }
     .swiper-pagination {
         position: absolute;
@@ -183,15 +181,18 @@
     }
 }
 .main-carusel-product {
+    padding: 0 45px;
+    min-height: 280px;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
-    background: white;
     &__image {
+        width: 100%;
         max-width: 120px;
         img {
+            vertical-align: middle;
             width: 100%;
             border-radius: 15px;
         }
@@ -218,10 +219,10 @@
         font-family: $america;
     }
 }
-
 .main-carusel-review {
+    padding: 0 45px;
+    min-height: 280px;
     flex: 1 1 auto;
-    background: #fff;
     position: relative;
     height: 100%;
     display: flex;
@@ -251,7 +252,6 @@
         }
     }
 }
-
 .ineichen-anniversary {
     display: flex;
     position: relative;
@@ -275,9 +275,168 @@
     }
 }
 
+.title:has(.est) {
+    padding-right: 250px;
+}
+
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 820px) {
+    .auctions-teaser-grid {
+        grid-template-columns: 1fr;
+    }
+    .auction-teaser-hero {
+        grid-column: 1/1;
+        &__info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        &__time {
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+    .serivices-list {
+        padding: 0 30px;
+        margin: 0 -30px -15px;
+        overflow-x: auto;
+    }
+    .serivices-list-item {
+        width: 80vw;
+        margin-bottom: 15px;
+    }
+    .ineichen-anniversary {
+        justify-content: space-between;
+        &__statistic {
+            gap: 10px;
+            flex-direction: column;
+        }
+        &__icon {
+            position: static;
+        }
+    }
+    .main-carusel-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .main-carusel-item {
+        box-shadow: none;
+        gap: 30px;
+        overflow-x: auto;
+        margin: -5px -30px -15px;
+        padding: 0 30px;
+        max-width: none;
+        @include scrollbars(0px, white, white);
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+        &__slide {
+            width: 80vw;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px 0 rgba(black, 0.15);
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+        .swiper-wrapper {
+            height: auto;
+            gap: 30px;
+        }
+    }
 }
 @media screen and (max-width: 520px) {
+    .auction-teaser-hero {
+        &__info {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+        &__state {
+            grid-column: 2 span;
+            position: static;
+            margin-right: auto;
+        }
+        &__name {
+            grid-column: 2 span;
+        }
+        .c-button {
+            grid-column: 2 span;
+        }
+
+        &__date {
+            grid-column: 1 / 1;
+        }
+        &__time {
+            grid-column: 2 / 2;
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+    .auction-teaser-small {
+        &__info {
+            padding: 15px;
+        }
+        &__name {
+            font-size: 15px;
+            br {
+                display: none;
+            }
+        }
+        &__props {
+            font-size: 12px;
+        }
+    }
+    .serivices-list-item {
+        &__info {
+            padding: 15px;
+            span {
+                font-size: 12px;
+            }
+        }
+        &__name {
+            font-size: 15px;
+        }
+    }
+    .ineichen-anniversary {
+        flex-direction: row-reverse;
+        &__statistic {
+            gap: 5px;
+            div {
+                justify-content: flex-end;
+            }
+        }
+        &__icon {
+            position: static;
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+    .title:has(.est) {
+        padding-right: 0px;
+    }
+    .main-carusel-product {
+        min-height: 200px;
+    }
+    .main-carusel-review {
+        min-height: 200px;
+        &__logo {
+            right: 15px;
+            bottom: 15px;
+            max-width: 80px;
+        }
+        &__text {
+            font-size: 17px;
+            &:before {
+                content: '“';
+                font-family: serif;
+                font-weight: bold;
+                font-size: 40px;
+                position: absolute;
+                left: -20px;
+                top: -35px;
+            }
+        }
+    }
 }
