@@ -184,13 +184,14 @@
     padding: 0 45px;
     min-height: 280px;
     flex: 1 1 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 120px 1fr;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    max-width: 500px;
+    margin: 0 auto;
     &__image {
-        width: 100%;
-        max-width: 120px;
         img {
             vertical-align: middle;
             width: 100%;
@@ -198,7 +199,6 @@
         }
     }
     &__info {
-        flex: 1 1 auto;
         max-width: 300px;
     }
     &__state {
@@ -374,8 +374,9 @@
         }
     }
     .auction-teaser-small {
+        gap: 15px;
         &__info {
-            padding: 15px;
+            padding: 15px 0 15px 15px;
         }
         &__name {
             font-size: 15px;
@@ -386,6 +387,11 @@
         &__props {
             font-size: 12px;
         }
+    }
+    .serivices-list {
+        padding: 0 15px;
+        margin: 0 -15px -15px;
+        gap: 15px;
     }
     .serivices-list-item {
         &__info {
@@ -416,11 +422,26 @@
     .title:has(.est) {
         padding-right: 0px;
     }
+    .main-carusel-grid {
+        gap: 15px;
+    }
+    .main-carusel-item {
+        gap: 15px;
+        margin: -5px -15px -15px;
+        padding: 0 15px;
+        .swiper-wrapper {
+            gap: 15px;
+        }
+    }
     .main-carusel-product {
         min-height: 200px;
+        padding: 10px 15px;
+        grid-template-columns: 90px 1fr;
+        gap: 15px;
     }
     .main-carusel-review {
         min-height: 200px;
+        padding: 10px 30px;
         &__logo {
             right: 15px;
             bottom: 15px;
