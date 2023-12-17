@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.0/swiper-bundle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="header__burger burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="header__nav">
+            <div class="header__nav-item">
+                <a href="" class="header__nav-link">
+                    Auctions
+                </a>
+                <div class="header__sub-nav">
+                    <a href="" class="header__sub-nav-link">
+                        Upcomming auctions
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Past auctions
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Condition of sale
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header__nav-item">
+                <a href="" class="header__nav-link">
+                    Services
+                </a>
+                <div class="header__sub-nav">
+                    <a href="" class="header__sub-nav-link">
+                        Sell your watch
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Sell on auction
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Collection managment
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header__nav-item">
+                <a href="" class="header__nav-link">
+                    Contacts
+                </a>
+            </div>
+        </div>
+        <a href="" class="header__logo">
+            <img src="svg/head-logo.svg" alt="">
+        </a>
+        <div class="header__buttons">
+            <div class="c-dropdown header__currency">
+                <a href="" class="c-dropdown__button header__currency-btn">
+                    <span class="flag-icon flag-icon-ch"></span>
+                    <strong>CHF</strong>
+                    <i class="mdi mdi-chevron-down"></i>
+                </a>
+                <div class="c-dropdown__list">
+                    <div class="c-dropdown__scroll">
+                        <a href="" class="c-dropdown__link">
+                            <span class="flag-icon flag-icon-ch"></span>
+                            CHF
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            <span class="flag-icon flag-icon-us"></span>
+                            USD
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            <span class="flag-icon flag-icon-eu"></span>
+                            EUR
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="" id="SearchOpen" class="header__button">
+                <i class="mdi mdi-magnify"></i>
+            </a>
+            <a href="" class="header__button">
+                <i class="mdi mdi-heart-outline"></i>
+                <small>3</small>
+            </a>
+            <div class="c-dropdown">
+                <a href="#" class="c-dropdown__button account-drop">
+                    <i class="mdi mdi-account-outline"></i>
+                    <span>EblanVasilevic2008@gmail.com <i class="mdi mdi-chevron-down"></i></span>
+                </a>
+                <div class="c-dropdown__list c-dropdown__list_right">
+                    <div class="c-dropdown__scroll">
+                        <a href="" class="c-dropdown__link">
+                            Profile
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            My Bids <span class="badge">3</span>
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            Payment
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            Invoices
+                        </a>
+                        <a href="" class="c-dropdown__link grey-text">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__search">
+            <div class="container">
+                <div class="header__search-form">
+                    <input type="text" placeholder=" Search for a specific lot">
+                    <a href="" id="SearchClose">
+                        <i class="mdi mdi-close"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__aside">
+            <div class="mobile-menu__body">
+                <div class="mobile-menu__nav">
+                    <a href="" class="mobile-menu__link">Auctions</a>
+                    <a href="" class="mobile-menu__link mobile-menu__link_sub">
+                        Services
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="mobile-menu__sub-nav">
+                        <a href="" class="mobile-menu__link">Sell watch</a>
+                        <a href="" class="mobile-menu__link">Consign watch</a>
+                        <a href="" class="mobile-menu__link">Collector Service</a>
+                    </div>
+                    <a href="" class="mobile-menu__link">Contacts</a>
+                </div>
+                <div class="mobile-menu__select">
+                    <select name="" id="">
+                        <option value="">EUR</option>
+                        <option value="">USD</option>
+                    </select>
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+            </div>
+            <div class="mobile-menu__footer">
+                <div class="c-dropdown">
+                    <a href="#" class="c-dropdown__button account-drop">
+                        EblanVasilevic2008@gmail.com <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="c-dropdown__list c-dropdown__list_position-top">
+                        <div class="c-dropdown__scroll">
+                            <a href="" class="c-dropdown__link">
+                                Profile
+                            </a>
+                            <a href="" class="c-dropdown__link">
+                                My Bids
+                            </a>
+                            <a href="" class="c-dropdown__link">
+                                Payment
+                            </a>
+                            <a href="" class="c-dropdown__link">
+                                Invoices
+                            </a>
+                            <a href="" class="c-dropdown__link grey-text">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="container">
+            <div class="auction-detail">
+                <h1 class="title">Independents 2023</h1>
+                <div class="auction-detail__info">
+                    <div class="auction-date-location">
+                        <div class="auction-date-location__item">
+                            <i class="mdi mdi-clock-outline"></i>
+                            <div class="auction-date-location__info">
+                                <span>Preview: <b>28 August, 10:00</b></span> <span class="auction-date-location__dash">—</span>
+                                <span>Live Auction: <b>14 September, 19:00</b></span>
+                            </div>
+                        </div>
+                        <div class="auction-date-location__item">
+                            <i class="mdi mdi-map-marker-outline"></i>
+                            <div class="auction-date-location__info">
+                                <span>Saal Metropol Zürich Stadthausquai 11-13, CH-8001 Zürich</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auction-detail__start">
+                        <span>Live bidding starts in</span>
+                        <div class="start-timer">
+                            <div class="start-timer__item">
+                                <b class="start-timer__digits">2 days</b>
+                            </div>
+                            <div class="start-timer__item">
+                                <b class="start-timer__digits">21</b>
+                            </div>
+                            <div class="start-timer__item">
+                                <b class="start-timer__digits">55</b>
+                            </div>
+                            <div class="start-timer__item">
+                                <b class="start-timer__digits">19</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="auction-detail__buttons">
+                    <a href="" class="c-button c-button_grey" id="ToggleContent">
+                        Event description
+                    </a>
+                    <div class="c-dropdown">
+                        <a href="" class="c-dropdown__button c-button c-button_grey c-button_icon-left disabled">
+                            <i class="mdi mdi-calendar-blank"></i>
+                            Add to calendar
+                        </a>
+                        <div class="c-dropdown__list">
+                            <div class="c-dropdown__scroll">
+                                <a href="" class="c-dropdown__link disabled">
+                                    outlook
+                                </a>
+                                <a href="" class="c-dropdown__link disabled">
+                                    google
+                                </a>
+                                <a href="" class="c-dropdown__link disabled">
+                                    apple
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div id="lots">
+                <div class="filtering-btns">
+                    <a href=""
+                        class="filtering-btns__sort-btn c-button c-button_grey c-button_medium c-button_icon-left c-button_icon-right">
+                        <i class="mdi mdi-filter-outline"></i>
+                        Sorting
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="filtering-btns__sorting">
+                        <strong>Go To:</strong>
+                        <div class="c-dropdown">
+                            <a href=""
+                                class="c-dropdown__button  c-button c-button_grey c-button_medium c-button_icon-right">
+                                Lot №
+                                <i class="mdi mdi-chevron-down"></i>
+                            </a>
+                            <div class="c-dropdown__list c-dropdown__list_left">
+                                <div class="c-dropdown__scroll">
+                                    <a href="" class="c-dropdown__link">
+                                        Lot №1
+                                    </a>
+                                    <a href="" class="c-dropdown__link">
+                                        Lot №2
+                                    </a>
+                                    <a href="" class="c-dropdown__link">
+                                        Lot №3
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filtering-btns__sorting">
+                        <strong>Sort by: </strong>
+                        <div class="c-dropdown">
+                            <a href=""
+                                class="c-dropdown__button  c-button c-button_grey c-button_medium c-button_icon-right">
+                                Low to high
+                                <i class="mdi mdi-chevron-down"></i>
+                            </a>
+                            <div class="c-dropdown__list c-dropdown__list_left">
+                                <div class="c-dropdown__scroll">
+                                    <a href="" class="c-dropdown__link">
+                                        Low to high
+                                    </a>
+                                    <a href="" class="c-dropdown__link">
+                                        Low to high
+                                    </a>
+                                    <a href="" class="c-dropdown__link">
+                                        Low to high
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="filtering-btns__download c-button c-button_grey c-button_medium c-button_icon-left c-button_icon-right">
+                        <i class="mdi mdi-file-document-outline"></i>
+                        <span>Download pdf catalog</span>
+                    </a>
+                </div>
+                <div class="lots-grid">
+                    <div class="lot-item" data-aos-delay="600" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image lot-item__image_square">
+                                <img src="img/auctions/lot-thumb.jpg"
+                                        alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert Casio alert Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                            <button class="lot-item__remove">
+                                <i class="mdi mdi-close"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$120,000 - $200,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item" data-aos-delay="600" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image lot-item__image_square">
+                                <img src="img/auctions/lot-thumb.jpg"
+                                        alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert Casio alert Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                            <button class="lot-item__remove">
+                                <i class="mdi mdi-close"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$120,000 - $200,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item" data-aos-delay="600" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image lot-item__image_square">
+                                <img src="img/auctions/lot-thumb.jpg"
+                                        alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert Casio alert Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                            <button class="lot-item__remove">
+                                <i class="mdi mdi-close"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$120,000 - $200,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item" data-aos-delay="600" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image lot-item__image_square">
+                                <img src="img/auctions/lot-thumb.jpg"
+                                        alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert Casio alert Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                            <button class="lot-item__remove">
+                                <i class="mdi mdi-close"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$120,000 - $200,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item" data-aos-delay="600" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image">
+                                <img src="img/auctions/lot-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert Casio alert Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                            <button class="lot-item__remove">
+                                <i class="mdi mdi-close"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$120,000 - $200,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item" data-aos-delay="0" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image">
+                                <div>
+                                <div class="lot-item__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="filter-bw" src="img/auctions/07716-1_full (1).jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="filter-bw" src="img/auctions/07716-1_full (2).jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="filter-bw" src="img/auctions/07716-1_full (3).jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-36px mdi-spin mdi-loading"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                            <button class="lot-item__remove">
+                                <i class="mdi mdi-close"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$4,000 - $6,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item lot-item_load" data-aos-delay="200" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image">
+                                <img class="filter-bw" src="img/auctions/lot-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$4,000 - $6,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item lot-item_load" data-aos-delay="400" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image">
+                                <div class="lot-item__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/auctions/07716-1_full (1).jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/auctions/07716-1_full (2).jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/auctions/07716-1_full (3).jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$4,000 - $6,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item lot-item_load" data-aos-delay="600" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image">
+                                <img src="img/auctions/lot-thumb.jpg" alt="">
+                            </a>
+                            <a href="#" class="lot-item__info">
+                                <h3 class="lot-item__brand">Rolex</h3>
+                                <h2 class="lot-item__name">
+                                    <span>Casio alert</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-chevron-right"></i>
+                                </span>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$4,000 - $6,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item" data-aos-delay="0" data-aos-duration="1000" data-aos="fade-in"
+                        data-aos-anchor-placement="center-bottom">
+                        <div class="lot-item__body">
+                            <a href="">
+                                <div class="lot-item__image">
+                                    <img src="https://ineichen.com/upload/resize_cache/iblock/bc7/500_750_1/t47nv910xj4c2y2vo19qyw8bgx26mkho.jpg"
+                                        alt="">
+                                </div>
+                                <div class="lot-item__info">
+                                    <h3 class="lot-item__brand">Rolex</h3>
+                                    <h2 class="lot-item__name">
+                                        <span>Vacheron Constantin Patrimony Perpetual Calendar Openworked</span>
+                                    </h2>
+                                    <span class="lot-item__link">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="lot-item__count">1</div>
+                            <button class="lot-item__favorite">
+                                <span>
+                                    <i class="mdi mdi-plus"></i>
+                                    Add to Favorites
+                                </span>
+                                <i class="mdi mdi-heart"></i>
+                            </button>
+                        </div>
+                        <div class="lot-item__price">
+                            <div class="lot-item__price-range">
+                                <span>Estimate:</span>
+                                <strong>$4,000 - $6,000</strong>
+                            </div>
+                            <div class="lot-item__price-range">
+                                <span>Current bid:</span>
+                                <strong>CHF 6,000</strong>
+                            </div>
+                            <div class="lot-item__bids">
+                                <span>Total bids:</span>
+                                <strong>5 Bid(s)</strong>
+                            </div>
+                            <div class="lot-item__price-now">
+                                <span>Fixed price:</span>
+                                <strong class="brown-text">CHF 150,000</strong>
+                            </div>
+                            <div class="lot-item__closing">
+                                <span>Closes in</span>
+                                <strong>3 day(s)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lot-item lot-item_consign">
+                        <div class="lot-item__body">
+                            <a href="" class="lot-item__image">
+                                <img src="svg/lot-card.svg" alt="">
+                            </a>
+                            <h3 class="lot-item__brand">You watch can be here</h3>
+                            <a href="#" class="lot-item__info">
+                                <h2 class="lot-item__name">
+                                    <span>Add your watch to our auction</span>
+                                </h2>
+                                <span class="lot-item__link">
+                                    <i class="mdi mdi-36px mdi-spin mdi-loading"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="lot-item__note">
+                            <b>Auction</b> and <b>private sales</b> <br>
+                            The fairest conditions
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="announce" style="display: none">
+                <!-- -------------------------------- анонс -------------------------------- -->
+
+                <div class="event-announce">
+                    <div class="event-announce__banner">
+                        <div class="event-announce__info">
+                            <h2 class="event-announce__title">Independents 11 MAY ‘23</h2>
+                            <p class="event-announce__text">Introducing Independents, a curated auction of timepieces crafted by innovative independent watchmakers of our time. These timepieces are not just watches, but masterpieces that reflect the creativity and passion of their creators.</p>
+                        </div>
+                        <img src="img/auctions/event-banner.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="event-announce-list">
+                    <div class="event-announce-item">
+                        <h3 class="event-announce-item__title">9 - 10 May, 14:00 (CET)</h3>
+                        <div class="event-announce-item__info">
+                            <b>Lots preview + Pre-auction sale</b> <br>
+                            Free entry, <a href="">Geneva-President Wilson Hotel, Quai Wilson 47, Zürich</a>
+                        </div>
+                        <div class="event-announce-item__description">
+                            Join us for a special preview and pre-auction sale of the lots at the venue, located at the heart of Geneva. Explore the exceptional collection of handcrafted timepieces while enjoying drinks and engaging in conversation with other watch enthusiasts. Don't miss this chance to build your collection or purchase a one-of-a-kind watch at a fixed price!Indulge in the magic of horology and immerse yourself in the world of Independents during a 3-day event in Zurich.
+                        </div>
+                        <a href="" class="c-button c-button_black c-button_medium">Watch video</a>
+                    </div>
+                    <div class="event-announce-item">
+                        <h3 class="event-announce-item__title">11 May, 14:00 (CET)</h3>
+                        <div class="event-announce-item__info">
+                            <b><span class="event-announce-item__live"></span>Live auction</b> <br>
+                            Free entry, <a href="">Geneva-President Wilson Hotel, Quai Wilson 47, Zürich</a>
+                        </div>
+                        <div class="event-announce-item__description">We invite you to our live auction - online and in Geneva, where you can bid on a limited selection of timepieces. Whether you are joining us in person or online, our expert team will guide you through the bidding process, ensuring that you have a seamless and enjoyable experience.Create and verify your account today to participate in the auction and become a part of the growing community of watch collectors and enthusiasts.</div>
+                        <a href="" class="c-button c-button_black c-button_medium">Watch video</a>
+                    </div>
+                </div>
+
+                <a href="" class="c-button c-button_blue c-button_full c-button_filled">Book & join events</a>
+
+                <div class="event-top-lots">
+                    <div class="lots-grid">
+                        <div class="lot-item">
+                            <div class="lot-item__body">
+                                <a href="" class="lot-item__image">
+                                    <img src="img/auctions/lot-thumb.jpg" alt="">
+                                </a>
+                                <a href="#" class="lot-item__info">
+                                    <h3 class="lot-item__brand">Rolex</h3>
+                                    <h2 class="lot-item__name">
+                                        <span>Casio alert</span>
+                                    </h2>
+                                    <span class="lot-item__link">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </a>
+                                <div class="lot-item__count">1</div>
+                                <button class="lot-item__favorite">
+                                    <span>
+                                        <i class="mdi mdi-plus"></i>
+                                        Add to Favorites
+                                    </span>
+                                    <i class="mdi mdi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="lot-item__price">
+                                <div class="lot-item__price-range">
+                                    <span>Estimate:</span>
+                                    <strong>$4,000 - $6,000</strong>
+                                </div>
+                                <div class="lot-item__price-range">
+                                    <span>Current bid:</span>
+                                    <strong>CHF 6,000</strong>
+                                </div>
+                                <div class="lot-item__bids">
+                                    <span>Total bids:</span>
+                                    <strong>5 Bid(s)</strong>
+                                </div>
+                                <div class="lot-item__price-now">
+                                    <span>Fixed price:</span>
+                                    <strong class="brown-text">CHF 150,000</strong>
+                                </div>
+                                <div class="lot-item__closing">
+                                    <span>Closes in</span>
+                                    <strong>3 day(s)</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-item">
+                            <div class="lot-item__body">
+                                <a href="" class="lot-item__image">
+                                    <img src="img/auctions/lot-thumb.jpg" alt="">
+                                </a>
+                                <a href="#" class="lot-item__info">
+                                    <h3 class="lot-item__brand">Rolex</h3>
+                                    <h2 class="lot-item__name">
+                                        <span>Casio alert</span>
+                                    </h2>
+                                    <span class="lot-item__link">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </a>
+                                <div class="lot-item__count">1</div>
+                                <button class="lot-item__favorite">
+                                    <span>
+                                        <i class="mdi mdi-plus"></i>
+                                        Add to Favorites
+                                    </span>
+                                    <i class="mdi mdi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="lot-item__price">
+                                <div class="lot-item__price-range">
+                                    <span>Estimate:</span>
+                                    <strong>$4,000 - $6,000</strong>
+                                </div>
+                                <div class="lot-item__price-range">
+                                    <span>Current bid:</span>
+                                    <strong>CHF 6,000</strong>
+                                </div>
+                                <div class="lot-item__bids">
+                                    <span>Total bids:</span>
+                                    <strong>5 Bid(s)</strong>
+                                </div>
+                                <div class="lot-item__price-now">
+                                    <span>Fixed price:</span>
+                                    <strong class="brown-text">CHF 150,000</strong>
+                                </div>
+                                <div class="lot-item__closing">
+                                    <span>Closes in</span>
+                                    <strong>3 day(s)</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-item">
+                            <div class="lot-item__body">
+                                <a href="" class="lot-item__image">
+                                    <img src="img/auctions/lot-thumb.jpg" alt="">
+                                </a>
+                                <a href="#" class="lot-item__info">
+                                    <h3 class="lot-item__brand">Rolex</h3>
+                                    <h2 class="lot-item__name">
+                                        <span>Casio alert</span>
+                                    </h2>
+                                    <span class="lot-item__link">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </a>
+                                <div class="lot-item__count">1</div>
+                                <button class="lot-item__favorite">
+                                    <span>
+                                        <i class="mdi mdi-plus"></i>
+                                        Add to Favorites
+                                    </span>
+                                    <i class="mdi mdi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="lot-item__price">
+                                <div class="lot-item__price-range">
+                                    <span>Estimate:</span>
+                                    <strong>$4,000 - $6,000</strong>
+                                </div>
+                                <div class="lot-item__price-range">
+                                    <span>Current bid:</span>
+                                    <strong>CHF 6,000</strong>
+                                </div>
+                                <div class="lot-item__bids">
+                                    <span>Total bids:</span>
+                                    <strong>5 Bid(s)</strong>
+                                </div>
+                                <div class="lot-item__price-now">
+                                    <span>Fixed price:</span>
+                                    <strong class="brown-text">CHF 150,000</strong>
+                                </div>
+                                <div class="lot-item__closing">
+                                    <span>Closes in</span>
+                                    <strong>3 day(s)</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-item">
+                            <div class="lot-item__body">
+                                <a href="" class="lot-item__image">
+                                    <img src="img/auctions/lot-thumb.jpg" alt="">
+                                </a>
+                                <a href="#" class="lot-item__info">
+                                    <h3 class="lot-item__brand">Rolex</h3>
+                                    <h2 class="lot-item__name">
+                                        <span>Casio alert</span>
+                                    </h2>
+                                    <span class="lot-item__link">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </span>
+                                </a>
+                                <div class="lot-item__count">1</div>
+                                <button class="lot-item__favorite">
+                                    <span>
+                                        <i class="mdi mdi-plus"></i>
+                                        Add to Favorites
+                                    </span>
+                                    <i class="mdi mdi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="lot-item__price">
+                                <div class="lot-item__price-range">
+                                    <span>Estimate:</span>
+                                    <strong>$4,000 - $6,000</strong>
+                                </div>
+                                <div class="lot-item__price-range">
+                                    <span>Current bid:</span>
+                                    <strong>CHF 6,000</strong>
+                                </div>
+                                <div class="lot-item__bids">
+                                    <span>Total bids:</span>
+                                    <strong>5 Bid(s)</strong>
+                                </div>
+                                <div class="lot-item__price-now">
+                                    <span>Fixed price:</span>
+                                    <strong class="brown-text">CHF 150,000</strong>
+                                </div>
+                                <div class="lot-item__closing">
+                                    <span>Closes in</span>
+                                    <strong>3 day(s)</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider">
+                    <div class="section-divider__inner">
+                        <div class="section-divider__button">
+                            <a href="" class="c-button c-button_black c-button_small">
+                                View all lots
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="press-quotes">
+                    <div class="press-quotes__item">
+                        <blockquote>Ineichen ... seems to have a thing for both modern, important watches as well as something that is dear to us, independent watchmaking.
+                        </blockquote>
+                        <strong>
+                            — Monocrome
+                        </strong>
+                    </div>
+                    <div class="press-quotes__item">
+                        <blockquote>Ineichen Auctioneers is closing out 2022 by offering timepieces that embody the essence of Haute Horlogerie in association with ARTLE.
+                        </blockquote>
+                        <strong>
+                            — Forbes
+                        </strong>
+                    </div>
+                    <div class="press-quotes__item">
+                        <blockquote>Each of the featured watches are chosen for their beauty, rareness and the mastery of a complication that adds to the functionality of a wristwatch.
+                        </blockquote>
+                        <strong>
+                            — Revolution
+                        </strong>
+                    </div>
+                </div>
+
+                <div class="event-place">
+                    <div class="event-place__curator">
+                        <h3>Auction curator</h3>
+                        <div class="consultant-info consultant-info_vertical">
+                            <img class="consultant-info__ava" width="140px" src="img/product/consultant.png" alt="">
+                            <div class="consultant-info__name">
+                                <b>Artemy Lechbinsky</b>
+                                Personal consultant
+                            </div>
+                            <div class="consultant-info__contacts">
+                                <b><a href="">+41 79 128 87 44</a></b>
+                                <a href="">artemy@lechbinsky.com</a>
+                            </div>
+                            <div class="consultant-info__messangers">
+                                <a href="">
+                                    <img src="img/icons/whatsapp.svg" alt="">
+                                    WhatsApp
+                                </a> <br>
+                                <a href="">
+                                    <img src="img/icons/telegram.svg" alt="">
+                                    Telegram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-place__adress">
+                        <h3>Independents 2023 -  Geneva-President Wilson Hotel,</h3>
+                        <p>Quai Wilson 47, Zürich</p>
+                        <iframe class="event-place__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.8169909150133!2d6.149421015771912!3d46.21409549111262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6522546dbc3d%3A0x27e7eb14ab653442!2sHotel%20President%20Wilson%2C%20a%20Luxury%20Collection%20Hotel%2C%20Geneva!5e0!3m2!1sru!2scz!4v1680548315014!5m2!1sru!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-line">
+                <div class="footer__nav">
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Sell Watches</strong>
+                        <a class="footer__nav-link" href="">Auction</a>
+                        <a class="footer__nav-link" href="">Consign</a>
+                        <a class="footer__nav-link" href="">Direct sale </a>
+                        <a class="footer__nav-link" href="">Free Appraisal</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Corporate</strong>
+                        <a class="footer__nav-link" href="">About Ineichen</a>
+                        <a class="footer__nav-link" href="">Ineichen Auctioneer </a>
+                        <a class="footer__nav-link" href="">Terms & Conditions </a>
+                        <a class="footer__nav-link" href="">Cookie policy </a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Support</strong>
+                        <a class="footer__nav-link" href="">FAQ</a>
+                        <a class="footer__nav-link" href="">T&C</a>
+                        <a class="footer__nav-link" href="">User protection</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Social Channels</strong>
+                        <a class="footer__nav-link" href="">Instagram</a>
+                        <a class="footer__nav-link" href="">Youtube</a>
+                        <a class="footer__nav-link" href="">Facebook</a>
+                        <a class="footer__nav-link" href="">Telegram</a>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    +41 44 298 11 44 <br>
+                    info@ineichen.com <br>
+                    Stadthausquai 11-13, Zürich <br>
+                    Tue-Fri - 10:00-17:30 Sat - 10:00-16:00
+                </div>
+            </div>
+            <div class="footer__bottom-line">
+                <a class="footer__logo" href="">
+                    <img src="svg/footer-logo.svg" alt="">
+                </a>
+                <a class="footer__lang" href="">
+                    English <i class="mdi mdi-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="Sorting" class="modal modal-small modal-small_full">
+        <div class="modal-small__title">Sorting</div>
+        <div class="modal-small__body">
+            <div class="c-accordion">
+                <div class="c-accordion__title">
+                    Go To:
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+                <div class="c-accordion__list">
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                    <a class="c-accordion__link" href="">Lot №7</a>
+                </div>
+                <div class="c-accordion__title">
+                    Sort by:
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+                <div class="c-accordion__list">
+                    <a class="c-accordion__link" href="">By lot №</a>
+                    <a class="c-accordion__link" href="">Price (low to high)</a>
+                    <a class="c-accordion__link" href="">Price (high to low)</a>
+                    <a class="c-accordion__link" href="">By name (A-Z)</a>
+                    <a class="c-accordion__link" href="">By name (Z-A)</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-small__footer">
+            <a href="" class="c-button c-button_blue c-button_filled c-button_full c-button_medium">Save</a>
+        </div>
+    </div>
+
+    <div id="LearnMore" class="modal modal-small modal-small_2x">
+        <div class="modal-small__title">Some title</div>
+        <div class="modal-small__body">
+            <div class="faq">
+                <div class="faq__list">
+                    <a href="" class="faq__title">
+                        What are the advantages of working with Ineichen Zurich?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>We have been successfully holding watch auctions since 1973 and working hard on the
+                                quality of our service, watch descriptions and catalogues, which allows best returns on
+                                each sale. </p>
+                            <p>It is in our interest to sell your collection at the highest price possible since we
+                                profit from the buyer’s commission on the hammer price. </p>
+                            <p>Our managers are working closely with sellers to make sure that the process is
+                                transparent at every stage. </p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        How long does the full cycle sale take?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>If you are focused on the fast results, we will do our best to place most of the lots
+                                from your collection in the nearest auctions possible, which may take <span
+                                    class="red-text">from 2 to 6 months. If we run a special auction exclusively for
+                                    your watches, the process will take at least 3 months. </span></p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        What is the price of the service? Is it commission based?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p><span class="red-text">Catalogue creation and estimation is charged as a separate service
+                                    in case the sale is not implied.</span> The price varies depending on the number of
+                                items and their rarity and condition. </p>
+                            <p>Otherwise, the evaluation is included in the price, and commission varies depending on
+                                the item, based on its value and rarity as per the following model:</p>
+                            <table>
+                                <tr>
+                                    <td>CHF 50 000 < Net Hammer</td>
+                                    <td>Commission = 20%</td>
+                                </tr>
+                                <tr>
+                                    <td>CHF 50 000 < Net Hammer < CHF 150 000</td>
+                                    <td>Commission = 15%</td>
+                                </tr>
+                                <tr>
+                                    <td>Net Hammer > CHF 150 000</td>
+                                    <td>Commission = 10%</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        How long does the estimation and catalogue creation take?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>
+                                Depending on the number of items it can take <span class="red-text">from several weeks
+                                    to a couple of months. </span>
+                            </p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        Who will be responsible for my collection management?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>
+                                Our team of photographers, experts and sellers led by a personal manager will work on
+                                your collection.
+                            </p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        How do I know that my collection was estimated fairly?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>
+                                We stand for each price that we set for a lot. Our estimations are based on the real
+                                data and expertise that we are ready to support with documentation and explanation at
+                                any point required.
+                            </p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        Where and to whom will my collection be sold?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>
+                                We would focus to place as many items as possible in the auctions for the sake of
+                                increasing both your and our profits from the sale. However, we may as well attract
+                                direct buyers from our client base and other available resources.
+                            </p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        Is it possible to sell my collection as a whole?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>
+                                <span class="red-text">
+                                    We would focus to place as many items as possible in the auctions for the sake of
+                                    increasing both your and our profits from the sale. However, we may as well attract
+                                    direct buyers from our client base and other available resources.
+                                </span>
+                            </p>
+                        </article>
+                    </div>
+                    <a href="" class="faq__title">
+                        Can I keep my collection in your office for maintenance?
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="faq__content">
+                        <article class="article-text">
+                            <p>
+                                For final estimation and preservation all the items will be carefully stored in our
+                                office to guarantee the unchanged condition until sale.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-small__footer">
+            <a href="" class="c-button c-button_blue c-button_filled c-button_full c-button_medium">okey</a>
+        </div>
+    </div>
+
+    <div id="JoinEvent" class="modal modal-small">
+        <div class="modal-small__title">Join event</div>
+        <div class="modal-small__body">
+            <b>Complete the quick form to register for event</b> <br>
+            <div class="c-field">
+                <input type="text" class="c-field__input">
+                <label class="c-field__label">Name</label>
+            </div>
+            <div class="c-field">
+                <input type="password" class="c-field__input">
+                <label class="c-field__label">Email address:</label>
+            </div>
+        </div>
+        <div class="modal-small__footer">
+            <a href="" class="c-button c-button_green c-button_filled c-button_full c-button_medium">Join event</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.0/swiper-bundle.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        $('#ToggleContent').click(function () {
+            $('#lots').toggle();
+            $('#announce').toggle();
+            if ($('#announce').is(":visible")) {
+                $(this).text('View auction lots')
+            } else {
+                $(this).text('Event description')
+            }
+            return false;
+        })
+
+        // setTimeout(function(){
+        //     $('.lot-item.lot-item_load').removeClass('lot-item_load');
+        // }, 3000);
+
+        var swiper = new Swiper(".lot-item__slider", {
+            autoplay: {
+                delay: 0
+            },
+            speed: 2000,
+            allowTouchMove: false
+        });
+
+        AOS.init({
+            once: true,
+        });
+
+        $('.filtering-btns__sort-btn').click(function () {
+            $('#Sorting').modal({
+                fadeDuration: 100,
+                closeExisting: false,
+                escapeClose: false,
+                closeClass: 'mdi mdi-close',
+                closeText: ''
+            });
+            return false;
+        });
+
+        $('#JoinEventOpen').click(function () {
+            $('#JoinEvent').modal({
+                fadeDuration: 100,
+                closeExisting: false,
+                escapeClose: false,
+                closeClass: 'mdi mdi-close',
+                closeText: ''
+            });
+            return false;
+        })
+
+        // $('#LearnMore').modal({
+        //     fadeDuration: 100,
+        //     closeExisting: false,
+        //     escapeClose: false,
+        //     closeClass: 'mdi mdi-close',
+        //     closeText: ''
+        // });
+
+
+
+
+    </script>
+</body>
+
+</html>

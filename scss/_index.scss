@@ -1,0 +1,283 @@
+.auctions-teaser-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.auction-teaser-small {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(black, 0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-decoration: none;
+    color: black;
+    &__image {
+        display: block;
+        overflow: hidden;
+        border-radius: 15px;
+        img {
+            width: 100%;
+            vertical-align: middle;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1.1) rotate(1deg);
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 24px;
+    }
+    &__state {
+        color: $grey-text;
+        font-size: 10px;
+        border-radius: 15px;
+        padding: 3px 8px;
+        border: 1px $grey-line solid;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    &__name {
+        font-size: 20px;
+        font-family: $america;
+        text-wrap: balance;
+        max-width: 300px;
+    }
+    &__props {
+        font-family: $america;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+.auction-teaser-hero {
+    grid-column: 2 span;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(black, 0.15);
+    position: relative;
+    &__info {
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        gap: 3%;
+    }
+    &__image {
+        display: block;
+        overflow: hidden;
+        border-radius: 15px;
+        img {
+            width: 100%;
+            vertical-align: middle;
+            transition: all 0.5s ease-in-out;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1) rotate(1deg);
+            }
+        }
+    }
+    &__state {
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        background: #fff;
+        color: $green-text;
+        font-size: 10px;
+        border-radius: 15px;
+        padding: 3px 8px;
+        border: 1px $green-text solid;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    b {
+        font-family: $america;
+        text-transform: uppercase;
+        display: block;
+    }
+    span {
+        font-family: $america;
+        color: $grey-text;
+    }
+    &__time {
+        margin-left: auto;
+        text-align: center;
+        span {
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+    }
+}
+.serivices-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include scrollbars(4px, $blue-bg, white);
+}
+.serivices-list-item {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(black, 0.15);
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        padding: 16px 24px;
+        span {
+            color: $grey-text;
+            font-size: 14px;
+        }
+    }
+    &__name {
+        font-size: 18px;
+        font-family: $america;
+        display: block;
+    }
+    &__image {
+        overflow: hidden;
+        border-radius: 15px;
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+        img {
+            width: 100%;
+            vertical-align: middle;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
+
+.main-carusel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.main-carusel-item {
+    --swiper-navigation-size: 22px;
+    --swiper-theme-color: #9d9d9d;
+    position: relative;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(black, 0.15);
+    &__slide {
+        min-height: 280px;
+        display: flex;
+        align-items: center;
+    }
+    .swiper-pagination {
+        position: absolute;
+        width: auto;
+        top: auto;
+        left: 24px;
+        bottom: 20px;
+        line-height: 1;
+        font-size: 12px;
+        color: $grey-text;
+        pointer-events: none;
+    }
+}
+.main-carusel-product {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: white;
+    &__image {
+        max-width: 120px;
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+    &__info {
+        flex: 1 1 auto;
+        max-width: 300px;
+    }
+    &__state {
+        display: inline-block;
+        color: $grey-text;
+        font-size: 10px;
+        border-radius: 15px;
+        padding: 3px 8px;
+        border: 1px $grey-line solid;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    &__text {
+        margin: 15px 0;
+        font-size: 14px;
+    }
+    &__price {
+        font-family: $america;
+    }
+}
+
+.main-carusel-review {
+    flex: 1 1 auto;
+    background: #fff;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__logo {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        max-width: 100px;
+        pointer-events: none;
+    }
+    &__text {
+        position: relative;
+        max-width: 450px;
+        font-size: 26px;
+        font-weight: 100;
+        font-family: $america;
+        &:before {
+            content: '“';
+            font-family: serif;
+            font-weight: bold;
+            font-size: 60px;
+            position: absolute;
+            left: -40px;
+            top: -35px;
+        }
+    }
+}
+
+.ineichen-anniversary {
+    display: flex;
+    position: relative;
+    &__statistic {
+        display: flex;
+        gap: 30px;
+        div {
+            display: flex;
+            gap: 10px;
+            color: $grey-text;
+        }
+        strong {
+            color: black;
+            font-family: $america;
+        }
+    }
+    &__icon {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 820px) {
+}
+@media screen and (max-width: 520px) {
+}

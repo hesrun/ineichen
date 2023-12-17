@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mobile-app-download" style="display: none">
+        <i class="mdi mdi-close"></i>
+        <div class="mobile-app-download__icon">
+            <img src="img/app-icon-36.png" alt="">
+        </div>
+
+        <div class="mobile-app-download__info">
+            <b>Ineichen App</b>
+            <span>Installed</span>
+        </div>
+        <a class="mobile-app-download__install" href="">Download</a>
+    </div>
+    <div class="no-premium-bar" style="display: none">
+        <div class="container">
+            <p>
+                <b>No more buyer's premium!</b> We have cancelled the buyer's premium, you pay only the Hammer price
+                now! Read new <a href="">Auction conditions</a>
+            </p>
+            <a href="" class="c-button c-button_small c-button_white c-button_filled">Close</a>
+        </div>
+    </div>
+    <header class="header">
+        <a href="" class="header__burger burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="header__nav">
+            <div class="header__nav-item">
+                <a href="" class="header__nav-link">
+                    Auctions
+                </a>
+                <div class="header__sub-nav">
+                    <a href="" class="header__sub-nav-link">
+                        Upcomming auctions
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Past auctions
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Condition of sale
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header__nav-item">
+                <a href="" class="header__nav-link">
+                    Services
+                </a>
+                <div class="header__sub-nav">
+                    <a href="" class="header__sub-nav-link">
+                        Sell your watch
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Sell on auction
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                    <a href="" class="header__sub-nav-link">
+                        Collection managment
+                        <i class="mdi mdi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header__nav-item">
+                <a href="" class="header__nav-link">
+                    Contacts
+                </a>
+            </div>
+        </div>
+        <a href="" class="header__logo">
+            <img class="header__logo_blue" src="svg/head-logo.svg" alt="">
+            <img class="header__logo_white" src="svg/head-logo-white.svg" alt="">
+        </a>
+        <div class="header__buttons">
+            <div class="c-dropdown header__currency">
+                <a href="" class="c-dropdown__button header__currency-btn">
+                    <span class="flag-icon flag-icon-ch"></span>
+                    <strong>CHF</strong>
+                    <i class="mdi mdi-chevron-down"></i>
+                </a>
+                <div class="c-dropdown__list">
+                    <div class="c-dropdown__scroll">
+                        <a href="" class="c-dropdown__link">
+                            <span class="flag-icon flag-icon-ch"></span>
+                            CHF
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            <span class="flag-icon flag-icon-us"></span>
+                            USD
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            <span class="flag-icon flag-icon-eu"></span>
+                            EUR
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="" id="SearchOpen" class="header__button">
+                <i class="mdi mdi-magnify"></i>
+            </a>
+            <a href="" class="header__button">
+                <i class="mdi mdi-heart-outline"></i>
+                <small>3</small>
+            </a>
+            <div class="c-dropdown">
+                <a href="#" class="c-dropdown__button account-drop">
+                    <i class="mdi mdi-account-outline"></i>
+                    <span>EblanVasilevic2008@gmail.com <i class="mdi mdi-chevron-down"></i></span>
+                </a>
+                <div class="c-dropdown__list c-dropdown__list_right">
+                    <div class="c-dropdown__scroll">
+                        <a href="" class="c-dropdown__link">
+                            Profile
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            My Bids
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            Payment
+                        </a>
+                        <a href="" class="c-dropdown__link">
+                            Invoices
+                        </a>
+                        <a href="" class="c-dropdown__link grey-text">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__search">
+            <div class="container">
+                <div class="header__search-form">
+                    <input type="text" placeholder=" Search for a specific lot">
+                    <a href="" id="SearchClose">
+                        <i class="mdi mdi-close"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__aside">
+            <div class="mobile-menu__body">
+                <div class="mobile-menu__nav">
+                    <a href="" class="mobile-menu__link">Auctions</a>
+                    <a href="" class="mobile-menu__link mobile-menu__link_sub">
+                        Services
+                        <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="mobile-menu__sub-nav">
+                        <a href="" class="mobile-menu__link">Sell watch</a>
+                        <a href="" class="mobile-menu__link">Consign watch</a>
+                        <a href="" class="mobile-menu__link">Collector Service</a>
+                    </div>
+                    <a href="" class="mobile-menu__link">Contacts</a>
+                </div>
+                <div class="mobile-menu__select">
+                    <select name="" id="">
+                        <option value="">EUR</option>
+                        <option value="">USD</option>
+                    </select>
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+            </div>
+            <div class="mobile-menu__footer">
+                <div class="c-dropdown">
+                    <a href="#" class="c-dropdown__button account-drop">
+                        EblanVasilevic2008@gmail.com <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="c-dropdown__list c-dropdown__list_position-top">
+                        <div class="c-dropdown__scroll">
+                            <a href="" class="c-dropdown__link">
+                                Profile
+                            </a>
+                            <a href="" class="c-dropdown__link">
+                                My Bids
+                            </a>
+                            <a href="" class="c-dropdown__link">
+                                Payment
+                            </a>
+                            <a href="" class="c-dropdown__link">
+                                Invoices
+                            </a>
+                            <a href="" class="c-dropdown__link grey-text">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <section class="land-section land-section_half land-section_clear">
+            <div class="container">
+                <div class="auctions-teaser-grid">
+                    <div class="auction-teaser-hero">
+                        <a href="" class="auction-teaser-hero__image">
+                            <img src="img/main/auctions/auction-b.jpg" alt="">
+                        </a>
+                        <div class="auction-teaser-hero__info">
+                            <div class="auction-teaser-hero__state">Online auction</div>
+                            <div class="auction-teaser-hero__name">
+                                <b>Independents 2023</b>
+                                <span>Part 2: Christmas Edition</span>
+                            </div>
+                            <div class="auction-teaser-hero__date">
+                                <b>9-22 DECEMBER</b>
+                                <span>16:00 CET</span>
+                            </div>
+                            <div class="auction-teaser-hero__time">
+                                <b>TIME LEFT</b>
+                                <span>23:12:34</span>
+                            </div>
+                            <a href="" class="c-button c-button_black">
+                                Place your bids now
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="auction-teaser-small">
+                        <div class="auction-teaser-small__info">
+                            <div class="auction-teaser-small__state">Private sales</div>
+                            <strong class="auction-teaser-small__name">Private <br> sales</strong>
+                            <div class="auction-teaser-small__props">TRADE, BUY, SELL</div>
+                        </div>
+                        <div class="auction-teaser-small__image">
+                            <img src="img/main/auctions/auct-s.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="auction-teaser-small">
+                        <div class="auction-teaser-small__info">
+                            <div class="auction-teaser-small__state">AUCTION RESULTS</div>
+                            <strong class="auction-teaser-small__name">Ineichen's <br> 50th Anniversary
+                            </strong>
+                            <div class="auction-teaser-small__props">9 DEC, 14:00 (CET)</div>
+                        </div>
+                        <div class="auction-teaser-small__image">
+                            <img src="img/main/auctions/auct-s-2.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="land-section land-section_half land-section_clear">
+            <div class="container">
+                <h2 class="title title_light">ineichen’s services</h2>
+                <div class="serivices-list">
+                    <div class="serivices-list-item">
+                        <div class="serivices-list-item__image">
+                            <img src="img/main/auctions/Rectangle 3342.jpg" alt="">
+                        </div>
+                        <div class="serivices-list-item__info">
+                            <strong class="serivices-list-item__name">Sell your watch</strong>
+                            <span>At our auctions or via private sales</span>
+                        </div>
+                    </div>
+                    <div class="serivices-list-item">
+                        <div class="serivices-list-item__image">
+                            <img src="img/main/auctions/Rectangle 3344.jpg" alt="">
+                        </div>
+                        <div class="serivices-list-item__info">
+                            <strong class="serivices-list-item__name">Personal concierge</strong>
+                            <span>We take care of every detail</span>
+                        </div>
+                    </div>
+                    <div class="serivices-list-item">
+                        <div class="serivices-list-item__image">
+                            <img src="img/main/auctions/Rectangle 3346.jpg" alt="">
+                        </div>
+                        <div class="serivices-list-item__info">
+                            <strong class="serivices-list-item__name">Join our community</strong>
+                            <span>27'081 active bidders</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="land-section land-section_half land-section_clear">
+            <div class="container">
+                <h2 class="title title_light">
+                    LEADING SWISS AUCTION HOUSE BASED IN ZURICH
+                    <small class="est">EST. 1973</small>
+                </h2>
+                <div class="ineichen-anniversary">
+                    <div class="ineichen-anniversary__statistic">
+                        <div>
+                            <strong>513</strong> Auctions in total
+                        </div>
+                        <div>
+                            <strong>CHF 500+</strong> Million in sales
+                        </div>
+                        <div>
+                            <strong>27,081</strong> Active bidders
+                        </div>
+                    </div>
+                    <div class="ineichen-anniversary__icon">
+                        <img src="img/main/auctions/anniversary.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="land-section land-section_half land-section_clear">
+            <div class="container">
+                <div class="main-carusel-grid">
+                    <div class="main-carusel-item swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="img/main/carusel-prod.jpg" alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2022’ WORLD RECORD</div>
+                                        <div class="main-carusel-product__text">World’s highest price for an Audemars
+                                            Piguet Royal Oak Tourbillon</div>
+                                        <b class="main-carusel-product__price">CHF 575,500</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="https://ineichen.com/upload/resize_cache/iblock/4bd/900_600_0/pu3p8s3cy7qqe2eh2riuf9jvi55q5lwm.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2023’ Home RECORD</div>
+                                        <div class="main-carusel-product__text">Lorem ipsum dolor sit amet.</div>
+                                        <b class="main-carusel-product__price">CHF 5,500</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="https://ineichen.com/upload/resize_cache/iblock/5d7/900_600_0/bvo5ieahnln1mya90fdife7a9kurxgzl.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2019’ Willage RECORD</div>
+                                        <div class="main-carusel-product__text">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Quidem.</div>
+                                        <b class="main-carusel-product__price">CHF 999,999</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="img/main/carusel-prod.jpg" alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2022’ WORLD RECORD</div>
+                                        <div class="main-carusel-product__text">World’s highest price for an Audemars
+                                            Piguet Royal Oak Tourbillon</div>
+                                        <b class="main-carusel-product__price">CHF 575,500</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="https://ineichen.com/upload/resize_cache/iblock/4bd/900_600_0/pu3p8s3cy7qqe2eh2riuf9jvi55q5lwm.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2023’ Home RECORD</div>
+                                        <div class="main-carusel-product__text">Lorem ipsum dolor sit amet.</div>
+                                        <strong class="main-carusel-product__price">CHF 5,500</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="https://ineichen.com/upload/resize_cache/iblock/5d7/900_600_0/bvo5ieahnln1mya90fdife7a9kurxgzl.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2019’ Willage RECORD</div>
+                                        <div class="main-carusel-product__text">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Quidem.</div>
+                                        <strong class="main-carusel-product__price">CHF 999,999</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="img/main/carusel-prod.jpg" alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2022’ WORLD RECORD</div>
+                                        <div class="main-carusel-product__text">World’s highest price for an Audemars
+                                            Piguet Royal Oak Tourbillon</div>
+                                        <strong class="main-carusel-product__price">CHF 575,500</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="https://ineichen.com/upload/resize_cache/iblock/4bd/900_600_0/pu3p8s3cy7qqe2eh2riuf9jvi55q5lwm.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2023’ Home RECORD</div>
+                                        <div class="main-carusel-product__text">Lorem ipsum dolor sit amet.</div>
+                                        <strong class="main-carusel-product__price">CHF 5,500</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-product">
+                                    <div class="main-carusel-product__image">
+                                        <img src="https://ineichen.com/upload/resize_cache/iblock/5d7/900_600_0/bvo5ieahnln1mya90fdife7a9kurxgzl.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="main-carusel-product__info">
+                                        <div class="main-carusel-product__state">2019’ Willage RECORD</div>
+                                        <div class="main-carusel-product__text">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Quidem.</div>
+                                        <strong class="main-carusel-product__price">CHF 999,999</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="main-carusel-item swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-review">
+                                    <blockquote class="main-carusel-review__text">
+                                        Watch Auctioneer Ineichen Sets Five World Records For Works By Independent
+                                        Watchmakers
+                                    </blockquote>
+                                    <img class="main-carusel-review__logo"
+                                        src="https://ineichen.com/upload/iblock/56d/rf3lkp3p42f4xnwqyxmhgssyma43ly96.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-review">
+                                    <blockquote class="main-carusel-review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, itaque!
+                                    </blockquote>
+                                    <img class="main-carusel-review__logo"
+                                        src="https://ineichen.com/upload/iblock/a1d/nxkz0gbfl63nraynbx6bte5cftgl5j5b.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-review">
+                                    <blockquote class="main-carusel-review__text">
+                                        Watch Auctioneer Ineichen Sets Five World Records For Works By Independent
+                                        Watchmakers
+                                    </blockquote>
+                                    <img class="main-carusel-review__logo"
+                                        src="https://ineichen.com/upload/iblock/101/az60sgjhn3e2p8w0t3yg5i1ypqvn0oul.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide main-carusel-item__slide">
+                                <div class="main-carusel-review">
+                                    <blockquote class="main-carusel-review__text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, itaque!
+                                    </blockquote>
+                                    <img class="main-carusel-review__logo"
+                                        src="https://ineichen.com/upload/iblock/ddb/1freh4rb3eqzi768mqbtaf977kf4mspm.png"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top-line">
+                <div class="footer__nav">
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Sell Watches</strong>
+                        <a class="footer__nav-link" href="">Auction</a>
+                        <a class="footer__nav-link" href="">Consign</a>
+                        <a class="footer__nav-link" href="">Direct sale </a>
+                        <a class="footer__nav-link" href="">Free Appraisal</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Corporate</strong>
+                        <a class="footer__nav-link" href="">About Ineichen</a>
+                        <a class="footer__nav-link" href="">Ineichen Auctioneer </a>
+                        <a class="footer__nav-link" href="">Terms & Conditions </a>
+                        <a class="footer__nav-link" href="">Cookie policy </a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Support</strong>
+                        <a class="footer__nav-link" href="">FAQ</a>
+                        <a class="footer__nav-link" href="">T&C</a>
+                        <a class="footer__nav-link" href="">User protection</a>
+                    </div>
+                    <div class="footer__nav-item">
+                        <strong class="footer__nav-title">Social Channels</strong>
+                        <a class="footer__nav-link" href="">Instagram</a>
+                        <a class="footer__nav-link" href="">Youtube</a>
+                        <a class="footer__nav-link" href="">Facebook</a>
+                        <a class="footer__nav-link" href="">Telegram</a>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    +41 44 298 11 44 <br>
+                    info@ineichen.com <br>
+                    Stadthausquai 11-13, Zürich <br>
+                    Tue-Fri - 10:00-17:30 Sat - 10:00-16:00
+                </div>
+            </div>
+            <div class="footer__bottom-line">
+                <a class="footer__logo" href="">
+                    <img src="svg/icon-logo.svg" alt="">
+                </a>
+                <div class="footer__apps">
+                    <a href="">
+                        <img src="img/main/app-ios.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/main/app-android.png" alt="">
+                    </a>
+                </div>
+                <div class="crypto-links crypto-links_footer">
+                    <div class="crypto-links__links">
+                        <a href="https://utrust.com/" class="crypto-links__link">
+                            <img class="crypto-links__image crypto-links__image_gray" src="img/icons/crypro-itrust.svg"
+                                alt="">
+                        </a>
+                        <a href="https://bitpay.com/" class="crypto-links__link">
+                            <img class="crypto-links__image crypto-links__image_gray" src="img/icons/crypro-bitpay.svg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <a class="footer__lang" href="">
+                    English <i class="mdi mdi-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="VideoModal" class="modal modal-video">
+        <div class="modal-video__wrapper">
+            <iframe id="FrameVideo" width="100%" height="100%" src=""
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var swiper = new Swiper(".main-carusel-item", {
+                effect: 'fade',
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            $('.our-team__video').click(function () {
+                linkVideo = $(this).attr('href');
+                $('#FrameVideo').attr('src', linkVideo);
+                $('#VideoModal').modal({
+                    fadeDuration: 100,
+                    closeExisting: false,
+                    escapeClose: false
+                });
+                return false;
+            })
+
+
+        });
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
