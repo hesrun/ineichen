@@ -8248,6 +8248,33 @@ select:-webkit-autofill:focus {
     grid-template-columns: 1fr;
   }
 }
+.christmas-cong {
+  position: relative;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  border: 1px #e6e6e6 solid;
+  border-radius: 10px;
+  padding: 20px 15px;
+  align-items: center;
+}
+.christmas-cong img {
+  max-width: 220px;
+}
+.christmas-cong__close {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 32px;
+  color: #676767;
+}
+.christmas-cong__close:hover {
+  color: #1C2473;
+}
+
 .auctions-teaser-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8262,6 +8289,8 @@ select:-webkit-autofill:focus {
   gap: 30px;
   text-decoration: none;
   color: black;
+  background: white;
+  transition: all 0.3s;
 }
 .auction-teaser-small__image {
   display: block;
@@ -8271,10 +8300,12 @@ select:-webkit-autofill:focus {
 .auction-teaser-small__image img {
   width: 100%;
   vertical-align: middle;
-  transition: all 0.5s ease-in-out;
 }
-.auction-teaser-small:hover img {
-  transform: scale(1.1) rotate(1deg);
+@media (any-hover: hover) {
+  .auction-teaser-small:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 .auction-teaser-small__info {
   display: flex;
@@ -8419,7 +8450,7 @@ select:-webkit-autofill:focus {
 }
 
 .main-carusel-item {
-  --swiper-navigation-size: 22px;
+  --swiper-navigation-size: 14px;
   --swiper-theme-color: #9d9d9d;
   position: relative;
   max-width: 100%;
@@ -8430,29 +8461,27 @@ select:-webkit-autofill:focus {
   background: #fff;
   border-radius: 15px;
 }
-.main-carusel-item .swiper-pagination {
+.main-carusel-item .swiper-button-next,
+.main-carusel-item .swiper-button-prev {
   position: absolute;
-  width: auto;
   top: auto;
-  left: 24px;
   bottom: 20px;
-  line-height: 1;
-  font-size: 12px;
-  color: #676767;
-  pointer-events: none;
+  left: auto;
+  padding: 10px;
+}
+.main-carusel-item .swiper-button-next {
+  right: 20px;
+}
+.main-carusel-item .swiper-button-prev {
+  right: 50px;
 }
 
 .main-carusel-product {
-  padding: 0 45px;
   min-height: 280px;
   flex: 1 1 auto;
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 185px 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-  max-width: 500px;
-  margin: 0 auto;
 }
 .main-carusel-product__image img {
   vertical-align: middle;
@@ -8460,7 +8489,9 @@ select:-webkit-autofill:focus {
   border-radius: 15px;
 }
 .main-carusel-product__info {
-  max-width: 300px;
+  max-width: 360px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 .main-carusel-product__state {
   display: inline-block;
@@ -8481,7 +8512,7 @@ select:-webkit-autofill:focus {
 }
 
 .main-carusel-review {
-  padding: 0 45px;
+  padding: 0 60px;
   min-height: 280px;
   flex: 1 1 auto;
   position: relative;
@@ -8492,16 +8523,17 @@ select:-webkit-autofill:focus {
 }
 .main-carusel-review__logo {
   position: absolute;
-  right: 30px;
+  left: 30px;
   bottom: 30px;
   max-width: 100px;
   pointer-events: none;
+  z-index: -1;
 }
 .main-carusel-review__text {
-  position: relative;
   max-width: 450px;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 100;
+  line-height: 1;
   font-family: "GT America Extended", sans-serif;
 }
 .main-carusel-review__text:before {
@@ -8510,8 +8542,8 @@ select:-webkit-autofill:focus {
   font-weight: bold;
   font-size: 60px;
   position: absolute;
-  left: -40px;
-  top: -35px;
+  left: 30px;
+  top: 10px;
 }
 
 .ineichen-anniversary {
@@ -8619,6 +8651,14 @@ select:-webkit-autofill:focus {
   }
 }
 @media screen and (max-width: 520px) {
+  .christmas-cong {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .christmas-cong__close {
+    top: 15px;
+    right: 15px;
+  }
   .auction-teaser-hero__info {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -8702,31 +8742,35 @@ select:-webkit-autofill:focus {
     gap: 15px;
   }
   .main-carusel-product {
-    min-height: 200px;
-    padding: 10px 15px;
-    grid-template-columns: 90px 1fr;
+    min-height: 150px;
+    padding: 0;
+    grid-template-columns: 120px 1fr;
     gap: 15px;
+  }
+  .main-carusel-product__info {
+    width: 100%;
+    padding: 10px;
   }
   .main-carusel-review {
     min-height: 200px;
     padding: 10px 30px;
   }
   .main-carusel-review__logo {
+    left: auto;
     right: 15px;
     bottom: 15px;
     max-width: 80px;
   }
   .main-carusel-review__text {
     font-size: 17px;
+    line-height: 1.2;
   }
   .main-carusel-review__text:before {
     content: "“";
-    font-family: serif;
-    font-weight: bold;
     font-size: 40px;
-    position: absolute;
-    left: -20px;
-    top: -35px;
+    left: 15px;
+    top: 10px;
+    z-index: 1;
   }
 }
 .partners-list {

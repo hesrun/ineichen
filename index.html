@@ -216,6 +216,24 @@
     <main class="content">
         <section class="land-section land-section_half land-section_clear">
             <div class="container">
+                <div class="christmas-cong">
+                    <img src="img/main/christmas.svg" alt="">
+                    <div>
+                        <p>In observance of the Christmas and New Year holidays, our office will be closed from
+                            <b>December
+                                23rd to January 2nd.</b>
+                        </p>
+                        <p> All items purchased at the “Independents 2023: Part 2” auction will be shipped
+                            after<b>January
+                                2nd, 2024.</b></p>
+                        <b>We hope you and your family have a wonderful holiday season!</b>
+                    </div>
+                    <button class="christmas-cong__close"><i class="mdi mdi-close"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="land-section land-section_half land-section_clear">
+            <div class="container">
                 <div class="auctions-teaser-grid">
                     <div class="auction-teaser-hero">
                         <a href="" class="auction-teaser-hero__image">
@@ -331,7 +349,7 @@
                             <div class="swiper-slide main-carusel-item__slide">
                                 <div class="main-carusel-product">
                                     <div class="main-carusel-product__image">
-                                        <img src="img/main/carusel-prod.jpg" alt="">
+                                        <img src="img/main/auctions/carusel-img.png" alt="">
                                     </div>
                                     <div class="main-carusel-product__info">
                                         <div class="main-carusel-product__state">2022’ WORLD RECORD</div>
@@ -371,7 +389,7 @@
                             <div class="swiper-slide main-carusel-item__slide">
                                 <div class="main-carusel-product">
                                     <div class="main-carusel-product__image">
-                                        <img src="img/main/carusel-prod.jpg" alt="">
+                                        <img src="img/main/auctions/carusel-img.png" alt="">
                                     </div>
                                     <div class="main-carusel-product__info">
                                         <div class="main-carusel-product__state">2022’ WORLD RECORD</div>
@@ -411,7 +429,7 @@
                             <div class="swiper-slide main-carusel-item__slide">
                                 <div class="main-carusel-product">
                                     <div class="main-carusel-product__image">
-                                        <img src="img/main/carusel-prod.jpg" alt="">
+                                        <img src="img/main/auctions/carusel-img.png" alt="">
                                     </div>
                                     <div class="main-carusel-product__info">
                                         <div class="main-carusel-product__state">2022’ WORLD RECORD</div>
@@ -451,7 +469,6 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
                     </div>
                     <div id="caruselReviews" class="main-carusel-item swiper">
                         <div class="swiper-wrapper">
@@ -500,7 +517,6 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -597,10 +613,6 @@
             var mySwiper;
             let swiperOptionsDesk = {
                 effect: 'fade',
-                pagination: {
-                    el: ".swiper-pagination",
-                    type: "fraction",
-                },
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
