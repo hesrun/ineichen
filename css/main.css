@@ -8250,11 +8250,10 @@ select:-webkit-autofill:focus {
 }
 .christmas-cong {
   position: relative;
-  margin-top: 30px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 30px;
-  border: 1px #e6e6e6 solid;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 20px 15px;
   align-items: center;
@@ -8415,6 +8414,13 @@ select:-webkit-autofill:focus {
 .serivices-list-item {
   border-radius: 15px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .serivices-list-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 .serivices-list-item__image img {
   width: 100%;
@@ -8435,13 +8441,9 @@ select:-webkit-autofill:focus {
   overflow: hidden;
   border-radius: 15px;
 }
-.serivices-list-item__image:hover img {
-  transform: scale(1.05);
-}
 .serivices-list-item__image img {
   width: 100%;
   vertical-align: middle;
-  transition: all 0.5s ease-in-out;
 }
 
 .main-carusel-grid {
@@ -8457,6 +8459,13 @@ select:-webkit-autofill:focus {
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .main-carusel-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 .main-carusel-item__slide {
   background: #fff;
