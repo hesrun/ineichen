@@ -236,8 +236,27 @@
             <div class="container">
                 <div class="auctions-teaser-grid">
                     <div class="auction-teaser-hero">
-                        <a href="" class="auction-teaser-hero__image">
-                            <img src="img/main/auctions/auction-b.jpg" alt="">
+                        <a href="" class="swiper hero-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide auction-teaser-hero__image">
+                                    <img src="img/main/auctions/auction-b.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide auction-teaser-hero__image">
+                                    <img src="img/main/auctions/auction-b2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide auction-teaser-hero__image">
+                                    <img src="img/main/auctions/auction-b3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide auction-teaser-hero__image">
+                                    <img src="img/main/auctions/auction-b.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide auction-teaser-hero__image">
+                                    <img src="img/main/auctions/auction-b2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide auction-teaser-hero__image">
+                                    <img src="img/main/auctions/auction-b3.jpg" alt="">
+                                </div>
+                            </div>
                         </a>
                         <div class="auction-teaser-hero__info">
                             <div class="auction-teaser-hero__state">Online auction</div>
@@ -611,6 +630,28 @@
         $(document).ready(function () {
 
             var mySwiper;
+
+
+            let swiperOptionsHero = {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        scale: 1,
+                        opacity: 1
+                    },
+                    next: {
+                        scale: 1.5,
+                        opacity: 0
+                    },
+                },
+            }
+
             let swiperOptionsDesk = {
                 effect: 'fade',
                 navigation: {
@@ -618,6 +659,9 @@
                     prevEl: ".swiper-button-prev",
                 },
             }
+
+            var heroSwiper = new Swiper('.hero-swiper', swiperOptionsHero);
+
 
             const checkSize = () => {
                 if ($('body').width() >= 820) {

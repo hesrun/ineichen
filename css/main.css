@@ -8340,6 +8340,7 @@ select:-webkit-autofill:focus {
   border-radius: 15px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   position: relative;
+  min-width: 0px;
 }
 .auction-teaser-hero__info {
   padding: 16px 24px;
@@ -8588,6 +8589,11 @@ select:-webkit-autofill:focus {
   .auction-teaser-hero__time {
     margin-left: 0;
     text-align: left;
+  }
+  .auction-teaser-hero__image img {
+    height: 50vw;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .serivices-list {
     padding: 0 30px;
