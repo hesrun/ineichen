@@ -8787,7 +8787,10 @@ select:-webkit-autofill:focus {
     min-height: 150px;
     padding: 0;
     grid-template-columns: 120px 1fr;
-    gap: 15px;
+    gap: 5px;
+  }
+  .main-carusel-product__state {
+    font-size: 9px;
   }
   .main-carusel-product__info {
     width: 100%;
@@ -8795,13 +8798,27 @@ select:-webkit-autofill:focus {
   }
   .main-carusel-product__text {
     font-size: 13px;
+    line-height: 15px;
+    height: 30vh;
+    max-height: 60px;
+    overflow: hidden;
+    position: relative;
+  }
+  .main-carusel-product__text:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0 0 20px 20px white;
   }
   .main-carusel-review {
-    min-height: 200px;
+    min-height: 180px;
     padding: 10px 30px;
   }
   .main-carusel-review:before {
-    font-size: 40px;
+    font-size: 32px;
     left: 15px;
     top: 10px;
     z-index: 1;
