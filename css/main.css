@@ -8340,6 +8340,13 @@ select:-webkit-autofill:focus {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   position: relative;
   min-width: 0px;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .auction-teaser-hero:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 .auction-teaser-hero__info {
   padding: 16px 24px;
@@ -8355,7 +8362,7 @@ select:-webkit-autofill:focus {
 .auction-teaser-hero__image img {
   width: 100%;
   vertical-align: middle;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .auction-teaser-hero__image:hover img {
   transform: scale(1.1) rotate(1deg);
@@ -8414,6 +8421,8 @@ select:-webkit-autofill:focus {
 .serivices-list-item {
   border-radius: 15px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: black;
   transition: all 0.3s;
 }
 @media (any-hover: hover) {

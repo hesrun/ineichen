@@ -305,7 +305,7 @@
             <div class="container">
                 <h2 class="title title_light">ineichen’s services</h2>
                 <div class="serivices-list">
-                    <div class="serivices-list-item">
+                    <a href="" class="serivices-list-item">
                         <div class="serivices-list-item__image">
                             <img src="img/main/auctions/Rectangle 3342.jpg" alt="">
                         </div>
@@ -313,8 +313,8 @@
                             <strong class="serivices-list-item__name">Sell your watch</strong>
                             <span>At our auctions or via private sales</span>
                         </div>
-                    </div>
-                    <div class="serivices-list-item">
+                    </a>
+                    <a href="" class="serivices-list-item">
                         <div class="serivices-list-item__image">
                             <img src="img/main/auctions/Rectangle 3344.jpg" alt="">
                         </div>
@@ -322,8 +322,8 @@
                             <strong class="serivices-list-item__name">Personal concierge</strong>
                             <span>We take care of every detail</span>
                         </div>
-                    </div>
-                    <div class="serivices-list-item">
+                    </a>
+                    <a href="" class="serivices-list-item">
                         <div class="serivices-list-item__image">
                             <img src="img/main/auctions/Rectangle 3346.jpg" alt="">
                         </div>
@@ -331,7 +331,7 @@
                             <strong class="serivices-list-item__name">Join our community</strong>
                             <span>27'081 active bidders</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -628,6 +628,10 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function () {
+
+            $('.christmas-cong__close').click(() => {
+                $('.christmas-cong').slideUp()
+            })
 
             var mySwiper;
 
