@@ -8477,6 +8477,8 @@ select:-webkit-autofill:focus {
   }
 }
 .main-carusel-item__slide {
+  color: black;
+  text-decoration: none;
   background: #fff;
   border-radius: 15px;
 }
@@ -8499,7 +8501,7 @@ select:-webkit-autofill:focus {
   min-height: 280px;
   flex: 1 1 auto;
   display: grid;
-  grid-template-columns: 185px 1fr;
+  grid-template-columns: 190px 1fr;
   align-items: center;
 }
 .main-carusel-product__image img {
@@ -8540,6 +8542,15 @@ select:-webkit-autofill:focus {
   align-items: center;
   justify-content: center;
 }
+.main-carusel-review:before {
+  content: "“";
+  font-family: serif;
+  font-weight: bold;
+  font-size: 60px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
 .main-carusel-review__logo {
   position: absolute;
   left: 30px;
@@ -8553,16 +8564,20 @@ select:-webkit-autofill:focus {
   font-size: 24px;
   font-weight: 100;
   line-height: 1;
+  line-height: 25px;
+  max-height: 100px;
+  overflow: hidden;
   font-family: "GT America Extended", sans-serif;
+  position: relative;
 }
-.main-carusel-review__text:before {
-  content: "“";
-  font-family: serif;
-  font-weight: bold;
-  font-size: 60px;
+.main-carusel-review__text:after {
+  content: "";
   position: absolute;
-  left: 30px;
-  top: 10px;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  box-shadow: 0 0 30px 35px white;
 }
 
 .ineichen-anniversary {
@@ -8775,26 +8790,33 @@ select:-webkit-autofill:focus {
     width: 100%;
     padding: 10px;
   }
+  .main-carusel-product__text {
+    font-size: 13px;
+  }
   .main-carusel-review {
     min-height: 200px;
     padding: 10px 30px;
+  }
+  .main-carusel-review:before {
+    font-size: 40px;
+    left: 15px;
+    top: 10px;
+    z-index: 1;
   }
   .main-carusel-review__logo {
     left: auto;
     right: 15px;
     bottom: 15px;
     max-width: 80px;
+    z-index: 1;
   }
   .main-carusel-review__text {
     font-size: 17px;
-    line-height: 1.2;
+    line-height: 20px;
+    max-height: 80px;
   }
-  .main-carusel-review__text:before {
-    content: "“";
-    font-size: 40px;
-    left: 15px;
-    top: 10px;
-    z-index: 1;
+  .main-carusel-review__text:after {
+    box-shadow: 0 0 25px 25px white;
   }
 }
 .partners-list {
