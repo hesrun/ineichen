@@ -8382,6 +8382,7 @@ select:-webkit-autofill:focus {
   border: 1px #2DAB0E solid;
   text-transform: uppercase;
   font-weight: 500;
+  z-index: 1;
 }
 .auction-teaser-hero b {
   font-family: "GT America Extended", sans-serif;
