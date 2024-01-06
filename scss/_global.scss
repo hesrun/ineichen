@@ -133,7 +133,7 @@ select:-webkit-autofill:focus {
     display: flex;
     align-items: center;
     font-family: $america;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
     margin: 24px 0 24px;
     &:first-of-type {
@@ -147,7 +147,7 @@ select:-webkit-autofill:focus {
         text-transform: uppercase;
         font-weight: 100;
         .est {
-            display: inline-block;
+            display: block;
             color: $grey-text;
             font-weight: 400;
             font-size: 15px;

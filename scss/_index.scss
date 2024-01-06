@@ -71,14 +71,13 @@
         font-weight: 500;
     }
     &__name {
-        font-size: 20px;
         font-family: $america;
+        text-transform: uppercase;
         text-wrap: balance;
         max-width: 300px;
     }
     &__props {
-        font-family: $america;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 500;
     }
 }
@@ -89,6 +88,13 @@
     position: relative;
     min-width: 0px;
     transition: all 0.3s;
+    b {
+        text-transform: uppercase;
+        display: block;
+    }
+    span {
+        color: $grey-text;
+    }
     @media (any-hover: hover) {
         &:hover {
             transform: scale(1.03);
@@ -102,7 +108,7 @@
         padding: 16px 24px;
         display: flex;
         align-items: center;
-        gap: 3%;
+        gap: 10%;
     }
     &__image {
         display: block;
@@ -133,17 +139,17 @@
         font-weight: 500;
         z-index: 1;
     }
-    b {
+
+    &__name {
         font-family: $america;
-        text-transform: uppercase;
-        display: block;
+        span {
+            color: black;
+            font-weight: 500;
+        }
     }
-    span {
-        font-family: $america;
-        color: $grey-text;
-    }
+
     &__time {
-        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         span {
             font-weight: 500;
@@ -182,7 +188,6 @@
         }
     }
     &__name {
-        font-size: 18px;
         font-family: $america;
         display: block;
     }
@@ -299,13 +304,10 @@
     }
     &__text {
         max-width: 450px;
-        font-size: 24px;
-        font-weight: 100;
-        line-height: 1;
-        line-height: 25px;
-        max-height: 100px;
+        font-size: 15px;
+        line-height: 1.2;
+        max-height: 90px;
         overflow: hidden;
-        font-family: $america;
         position: relative;
         &:after {
             content: '';
@@ -321,28 +323,27 @@
 .ineichen-anniversary {
     display: flex;
     position: relative;
+    align-items: flex-start;
     &__statistic {
-        display: flex;
-        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        white-space: nowrap;
         div {
-            display: flex;
-            gap: 10px;
+            display: grid;
+            gap: 0 15px;
+            grid-template-columns: 100px 1fr;
             color: $grey-text;
         }
         strong {
+            text-align: right;
             color: black;
             font-family: $america;
         }
     }
     &__icon {
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
+        margin: 0 auto;
     }
-}
-
-.title:has(.est) {
-    padding-right: 250px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -379,13 +380,17 @@
         margin-bottom: 15px;
     }
     .ineichen-anniversary {
-        justify-content: space-between;
+        flex-wrap: wrap;
+        .title {
+            width: 100%;
+            br {
+                display: none;
+            }
+        }
         &__statistic {
-            gap: 10px;
-            flex-direction: column;
+            gap: 3px;
         }
         &__icon {
-            position: static;
         }
     }
     .main-carusel-grid {
@@ -459,7 +464,6 @@
             padding: 15px 0 15px 15px;
         }
         &__name {
-            font-size: 15px;
             br {
                 display: none;
             }
@@ -483,24 +487,6 @@
         &__name {
             font-size: 15px;
         }
-    }
-    .ineichen-anniversary {
-        flex-direction: row-reverse;
-        &__statistic {
-            gap: 5px;
-            div {
-                justify-content: flex-end;
-            }
-        }
-        &__icon {
-            position: static;
-            img {
-                max-width: 200px;
-            }
-        }
-    }
-    .title:has(.est) {
-        padding-right: 0px;
     }
     .main-carusel-grid {
         gap: 15px;
@@ -560,9 +546,7 @@
             z-index: 1;
         }
         &__text {
-            font-size: 17px;
-            line-height: 20px;
-            max-height: 80px;
+            max-height: 70px;
             &:after {
                 box-shadow: 0 0 25px 25px white;
             }
