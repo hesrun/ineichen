@@ -4020,16 +4020,16 @@
     }
     &__lot {
         display: grid;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: 1fr auto;
     }
     &__lot-info {
         line-height: 1.2;
         padding: 1vw 1.5vw;
         font-size: 1.5vw;
+        border-top: 1px #555 solid;
     }
     &__lot-image {
         position: relative;
-        border-top: 1px #555 solid;
         img {
             position: absolute;
             left: 50%;

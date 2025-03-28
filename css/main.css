@@ -5806,16 +5806,16 @@ select:-webkit-autofill:focus {
 }
 .stream-app__lot {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 1fr auto;
 }
 .stream-app__lot-info {
   line-height: 1.2;
   padding: 1vw 1.5vw;
   font-size: 1.5vw;
+  border-top: 1px #555 solid;
 }
 .stream-app__lot-image {
   position: relative;
-  border-top: 1px #555 solid;
 }
 .stream-app__lot-image img {
   position: absolute;
