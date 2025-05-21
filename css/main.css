@@ -5815,19 +5815,19 @@ select:-webkit-autofill:focus {
   border-top: 1px #555 solid;
 }
 .stream-app__lot-image {
+  width: 100%;
   position: relative;
 }
 .stream-app__lot-image img {
   position: absolute;
-  left: 50%;
-  top: 0px;
+  left: 0;
+  top: 0;
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  transform: translateX(-50%);
 }
 .stream-app__lot-num {
   margin-bottom: 1vw;
